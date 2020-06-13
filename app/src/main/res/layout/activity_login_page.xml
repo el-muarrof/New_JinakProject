@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".loginPage"
+    android:background="@drawable/splash_background">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+                <ImageView
+                    android:layout_marginTop="20dp"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/logo_trns"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LOGIN"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:textSize="24dp"
+                    android:layout_marginBottom="10dp"/>
+
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Username"
+                    android:inputType="text"
+                    android:ems="10"
+                    android:drawableLeft="@drawable/ic_person_oranye_24dp"
+                    android:paddingLeft="10dp"
+                    android:textColor="#000"
+                    android:background="@drawable/background_edittext"/>
+
+                <EditText
+                    android:layout_marginTop="10dp"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_edittext"
+                    android:drawableLeft="@drawable/ic_vpn_key_oranye_24dp"
+                    android:hint="Password"
+                    android:ems="10"
+                    android:inputType="textPassword"
+                    android:maxLength="16"
+                    android:paddingLeft="10dp"
+                    android:textColor="#000"/>
+
+                <Button
+                    android:layout_width="300dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/btn_regist"
+                    android:layout_marginTop="30dp"
+                    android:text="Login"
+                    android:textSize="18dp"
+                    android:textColor="#ffff"
+                    android:textStyle="bold"
+                    android:onClick="Login"/>
+                <Button
+                    android:id="@+id/btn_signup"
+                    android:layout_width="300dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/btn_regist"
+                    android:layout_marginTop="20dp"
+                    android:text="Sign up"
+                    android:textSize="18dp"
+                    android:textColor="#ffff"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="25dp"/>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

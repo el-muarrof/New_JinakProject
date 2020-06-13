@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.new_jinakproject">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ikanPage"></activity>
+        <activity android:name=".burungPage" />
+        <activity android:name=".detailIkan" />
+        <activity android:name=".detailBurung" />
+        <activity android:name=".ayamPage" />
+        <activity android:name=".detailAyam" />
+        <activity android:name=".detailKelinci" />
+        <activity android:name=".detail_kelinci" />
+        <activity android:name=".detailkelinci">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".detailkambing" />
+        <activity android:name=".detailSapi" />
+        <activity android:name=".kelinciPage" />
+        <activity android:name=".registPage" />
+        <activity android:name=".kambingPage" />
+        <activity android:name=".sapiPage" />
+        <activity android:name=".fragmentController" />
+        <activity android:name=".loginPage" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
